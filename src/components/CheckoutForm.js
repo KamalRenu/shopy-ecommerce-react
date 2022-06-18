@@ -37,8 +37,8 @@ const CheckoutForm = ({ totalPrice, paymentHandler }) => {
 			const { data } = await axios.post(
 				'https://shopy-ecommerce-node.herokuapp.com/api/payments/config/stripe-payment-intent',
 				{
-					amount: totalPrice.toFixed(0),
-					currency: 'usd',
+					amount: totalPrice.toFixed(2)*100,
+					currency: 'inr',
 				}
 			);
 
