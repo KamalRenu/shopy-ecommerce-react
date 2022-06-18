@@ -38,7 +38,7 @@ const CheckoutForm = ({ totalPrice, paymentHandler }) => {
 				'https://shopy-ecommerce-node.herokuapp.com/api/payments/config/stripe-payment-intent',
 				{
 					amount: totalPrice.toFixed(0),
-					currency: 'inr',
+					currency: 'usd',
 				}
 			);
 
